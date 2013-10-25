@@ -1,10 +1,10 @@
 {
-  "name": "Grunt Karma Example",
+  "name": "grunt-karma-example",
   "version": "0.1.0",
   "description": "Bare bones example of Grunt with the grunt-karma task.",
   "main": "source/colorizer.js",
   "scripts": {
-    "test": "node_modules/.bin/grunt karma"
+    "test": "grunt karma"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   },
   "author": "Dan Cobb",
   "license": "BSD",
-  "devDependencies": {
+  "dependencies": {
     "grunt-cli": "*",
     "grunt": "*",
     "karma": "0.10.2",
