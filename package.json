@@ -13,9 +13,9 @@
   "author": "Dan Cobb",
   "license": "BSD",
   "dependencies": {
-    "grunt-cli": "*",
-    "grunt": "*",
+    "grunt-cli": "0.1.9",
+    "grunt": "0.4.1",
     "karma": "0.10.2",
-    "grunt-karma": "*"
+    "grunt-karma": "0.6.2"
   }
 }
