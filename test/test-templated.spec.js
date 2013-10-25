@@ -1,4 +1,7 @@
-// test/test.spec.js
+/**
+ * Test the Colorizer module using a template and
+ * actual jQuery calls with the PhantomJS DOM.
+ */
 describe('Colorizer', function () {
     it('converts colors from rgb to hex', function () {
         var crayon = Colorizer(_, $);
@@ -9,7 +12,7 @@ describe('Colorizer', function () {
 
     it('changes the color of a container', function () {
         // Load the fixture.
-        document.body.innerHTML = __html__['test/fixture.html'];
+        document.body.innerHTML = __html__['test/test.template.html'];
 
         // Set the new color.
         var crayon = Colorizer(_, $);

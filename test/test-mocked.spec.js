@@ -1,4 +1,8 @@
-// test/test.spec.js
+/**
+ * Test the Colorizer module by mocking all jQuery
+ * and DOM interactions. This is just to prove that
+ * you don't always need a template.
+ */
 describe('Colorizer', function () {
     describe('rgb2hex', function () {
         it('converts colors from rgb to hex', function () {

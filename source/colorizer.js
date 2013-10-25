@@ -1,6 +1,13 @@
-//sdflkj colorizer.js
+/**
+ * Simple module that has some DOM interactions and
+ * vendor method calls.
+ */
 function Colorizer(_, $) {
     return {
+        /**
+         * Convert a color value from RBG format to hex.
+         * Ex) rgb(0,0,0) -> #000000
+         */
         rgb2hex: function (rgb) {
             var dec = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1);
             var hex = '#';
@@ -9,6 +16,9 @@ function Colorizer(_, $) {
             });
             return hex;
         },
+        /**
+         * Change the backgrount color of a page element.
+         */
         color: function (id, color) {
             $(id).css('background-color', color);
         }
