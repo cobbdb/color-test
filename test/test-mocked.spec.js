@@ -21,7 +21,7 @@ describe('Colorizer', function () {
         });
         
         it('changes css background-color rule', function () {
-            var cssSpy = jasmine.createSpy('$.css');
+            var cssSpy = jasmine.createSpy('jQ css method');
             var arg;
             var jqMock = function (id) {
                 arg = id;
